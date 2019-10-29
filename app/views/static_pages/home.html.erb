@@ -1,4 +1,10 @@
-<h1>LES POTINS</h1>
+
+<h1>CE SONT TOUT LES POTINS</h1>
+<br/>
 <% @home.each do |potin| %>
-<p><%= potin.title %></p>
+<ul>
+     <li>
+    <p><%= potin.content%></p>
+     </li>
+</ul>
 <% end %>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+
+  <h1>Message#contact</h1>
+  <p>Find me in app/views/message/contact.html.erb</p>
+
+  <header>
+        <nav>
+            <ul>
+                <li> <%= link_to "Home", home_path %></li>
+                <li> <%= link_to "Contact", contact_path %> </li>
+                <li> <%= link_to "Team", team_path %> </li>
+
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+  <form role="form" action="/contact" method="post">
+
+  <p class="formulaireContact">Formulaire de contact</p>
+
+<span>
+  <label for="email">Email</label>
+  <input class="formulaire" id="email" type="text" name="Email" required placeholder="Email">
+</span>
+
+<span class="fas fa-paper-plane">
+  <label for="message">Message</label>
+  <input class="formulaire" id="message" type="text" name="Envoyer Message" required placeholder="Votre message" rows="3"></textarea>
+</span>
+
+<span class="button">
+
+  <button type="submit" id="submit">Envoyer</button>
+
+</span>
+
+
+    <%= yield %>
+  </body>
+</html>

@@ -1,3 +1,4 @@
+require 'faker'
 User.destroy_all
 City.destroy_all
 Gossip.destroy_all
